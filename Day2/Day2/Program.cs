@@ -1,43 +1,15 @@
-﻿string myName = "Kamil";
-string sex = "Male";
-int myAge = 24;
+﻿int number = 4566;
+string numberIsString = number.ToString();
+char[] letters = numberIsString.ToCharArray();
+int[] digitCount = new int[10];
 
-if (sex == "Male"){
-    if (myAge < 30)
-    {
-        Console.WriteLine(sex + ", " + "ponizej 30 lat");
-    }
-    else
-    {
-        Console.WriteLine(sex + ", " + "powyzej 30 lat");
+foreach (char letter in letters){
+    if (char.IsDigit(letter)){
+        int digit = int.Parse(letter.ToString());
+        digitCount[digit]++; 
     }
 }
-else{
-    if (myAge < 30)
-    {
-        Console.WriteLine(myName + ", " + "ponizej 30 lat");
-    }
-    else
-    {
-        Console.WriteLine(myName + ", " + "powyzej 30 lat");
-    }
-}
-    
-Console.WriteLine(myName + ", " + "lat " + myAge);
-
-if (myAge >= 18){
-    if (sex == "Male") {
-        Console.WriteLine("Pelnoletni mezczyna");
-    }
-    else {
-        Console.WriteLine("Pelnoletnia kobieta");
-    }
-}
-else{
-    if (sex == "Male"){
-        Console.WriteLine("Niepelnoletni mezczyna");
-    }
-    else{
-        Console.WriteLine("Niepelnoletnia kobieta");
-    }
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i + " => " + digitCount[i]);
 }
