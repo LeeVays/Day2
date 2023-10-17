@@ -13,13 +13,13 @@ namespace Day2
 
         public Employee(string name, string surrname, int age)
         {
-            this.name=name;
-            this.surrname = surrname;
-            this.age = age;
+            this.Name=name;
+            this.Surrname = surrname;
+            this.Age = age;
         }
-        public string name {  get; private set; }
-        public string surrname { get; private set; }
-        public int age { get; private set; }
+        public string Name {  get; private set; }
+        public string Surrname { get; private set; }
+        public int Age { get; private set; }
 
         public int Result
         {
@@ -29,7 +29,7 @@ namespace Day2
             }
         }
 
-        public void addGrade(int grade)
+        public void AddGrade(int grade)
         {
             this.grade.Add(grade);
         }
