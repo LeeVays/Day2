@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Day2
 {
-    internal class Employee
+    public class Employee
     {
-        private List<int> grade = new List<int>();
+        private List<int> grade = new();
 
         public Employee(string name, string surrname, int age)
         {

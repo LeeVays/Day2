@@ -1,9 +1,9 @@
 ﻿using Day2;
 using System.ComponentModel.DataAnnotations;
 
-Employee employee1 = new Employee("Kamil", "Nowak", 21);
-Employee employee2 = new Employee("Pawel", "Przybysz", 34);
-Employee employee3 = new Employee("Jan", "Niezbędny", 37);
+Employee employee1 = new("Kamil", "Nowak", 21);
+Employee employee2 = new("Pawel", "Przybysz", 34);
+Employee employee3 = new("Jan", "Niezbędny", 37);
 
 Random random = new Random();
 for (int i = 0; i < 5; i++)
