@@ -32,6 +32,7 @@
             var employee2 = new Employee("Patryk", "Turak", 37);
 
 
+
             Assert.That(employee2.Surrname, Is.Not.EqualTo(employee1.Surrname));
         }
 
